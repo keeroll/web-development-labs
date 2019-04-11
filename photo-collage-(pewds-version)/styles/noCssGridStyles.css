@@ -20,28 +20,28 @@ td {
 }
 
 .item1 {
-    width: 530px;
-    height: 300px;
+    max-width: 530px;
+    max-height: 300px;
 }
 
 .item2 {
-    width: 260px;
-    height: 510px;
+    max-width: 260px;
+    max-height: 510px;
 }
 
 .item3, .item4 {
-    width: 260px;
-    height: 200px;
+    max-width: 260px;
+    max-height: 200px;
 }
 
 .item5 {
-    width: 260px;
-    height: 330px;
+    max-width: 260px;
+    max-height: 330px;
 }
 
 .item6 {
-    width: 530px;
-    height: 330px;
+    max-width: 530px;
+    max-height: 330px;
 }
 
 .link-container > a{

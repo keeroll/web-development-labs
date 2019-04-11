@@ -1,0 +1,150 @@
+@btn-basic-color: #2ECC72;
+@btn-round-color: #27B05D;
+@btn-vertical-color: #EEC40F;
+@btn-shake-color: #F39C0F;
+
+@btn-zoom-color: #3597DD;
+@btn-square-color: #2A80BA;
+@btn-horizontal-color: #E67F22;
+@btn-shrink-color: #D25201;
+
+@btn-bell-color: #9B58B3;
+@btn-shadow-color: #8F43AC;
+@btn-down-color: #E84C3B;
+@btn-expand-color: #BF3A2A;
+
+@btn-rotate-color: #16A086;
+@btn-move-up-color: #2C3D4D;
+@btn-up-color: #94A4A4;
+@btn-bounce-color: #7D8D8D;
+
+@btn-font-size: 15px;
+@btn-icon-size: 0;
+@btn-font-color: #FFFFFF;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+
+    .btn {
+        width: 150px;
+        height: 30px;
+        border-width: 0;
+        color: @btn-font-color;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .btn-text {
+        .margin-left-10();
+    }
+
+    .fa-icon {
+        float: right;
+        .margin-right-10();
+    }
+
+    .btn-basic {
+        .btn-settings(@btn-basic-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-round {
+        .btn-settings(@btn-round-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-vertical {
+        .btn-settings(@btn-vertical-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-shake {
+        .btn-settings(@btn-shake-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-zoom {
+        .round-borders(8px, 8px, 8px, 8px);
+        .btn-settings(@btn-zoom-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-square {
+        .round-borders(8px, 8px, 8px, 8px);
+        .btn-settings(@btn-square-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-horizontal {
+        .round-borders(8px, 8px, 8px, 8px);
+        .btn-settings(@btn-horizontal-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-shrink {
+        .round-borders(8px, 8px, 8px, 8px);
+        .btn-settings(@btn-shrink-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-bell {
+        .round-borders(8px, 2px, 8px, 2px);
+        .btn-settings(@btn-bell-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-shadow {
+        .round-borders(8px, 2px, 8px, 2px);
+        .btn-settings(@btn-shadow-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-down {
+        .round-borders(8px, 2px, 8px, 2px);
+        .btn-settings(@btn-down-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-expand {
+        .round-borders(8px, 2px, 8px, 2px);
+        .btn-settings(@btn-expand-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-rotate {
+        .round-borders(2px, 8px, 2px, 8px);
+        .btn-settings(@btn-rotate-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-move-up {
+        .round-borders(2px, 8px, 2px, 8px);
+        .btn-settings(@btn-move-up-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-up {
+        .round-borders(2px, 8px, 2px, 8px);
+        .btn-settings(@btn-up-color, @btn-font-size, @btn-icon-size);
+    }
+    
+    .btn-bounce {
+        .round-borders(2px, 8px, 2px, 8px);
+        .btn-settings(@btn-bounce-color, @btn-font-size, @btn-icon-size);
+    }
+}
+
+.round-borders (@top-left, @top-right, @bottom-right, @bottom-left) {
+    border-radius: @top-left @top-right @bottom-right @bottom-left;
+}
+
+.btn-settings(@background-color, @font-size, @icon-size) {
+    background-color: @background-color;
+    font-size: @font-size;
+}
+
+.margin-5 {
+    margin: 5px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
