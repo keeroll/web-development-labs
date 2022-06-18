@@ -1,2 +1,2 @@
-# University tasks repository (web development course)
-### A few projects to pass web development course at university.
+# Web development repository
+Some web development tasks for one of my university courses
